@@ -1,0 +1,55 @@
+
+body{
+    padding: 0;
+    margin: 3rem 0 5rem 0;
+    background-color: darkslategrey;
+    color:coral;
+    font-family: 'Courier New', Courier, monospace;
+}
+h1{
+    text-transform: uppercase;
+    margin: 1rem;
+}
+h2{
+    margin: 1rem;
+}
+h3{
+    margin: 3rem 0;
+}
+a{
+    margin: 1rem;
+    color: coral;
+}
+
+a:visited{
+    color:coral;
+}
+a:hover{
+    color: darkkhaki;
+}
+p{
+    margin: 1rem;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+.overview-recipes{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+}
+.overview-recipes li{
+    list-style: none;
+    flex: 1;
+    margin: 0;
+    padding: 0;
+}
+.overview-recipes li img{
+    width: 100%;
+    height: auto;
+}
+.overview-recipes li h3, .overview-recipes li p{
+    margin: 1rem;
+}
