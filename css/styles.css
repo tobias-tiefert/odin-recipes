@@ -1,7 +1,7 @@
 
 body{
     padding: 0;
-    margin: 3rem 0 5rem 0;
+    margin: 3rem 0 0 0;
     background-color: darkslategrey;
     color:coral;
     font-family: 'Courier New', Courier, monospace;
@@ -46,9 +46,13 @@ a:visited{
 a:hover{
     color: darkkhaki;
 }
+.overview-recipes li:hover{
+    margin-top: -0.8rem;
+    margin-bottom: 0.8rem;
+    
+}
 .overview-recipes li:hover img{
     filter:brightness(130%);
-    margin-top: -0.8rem;
     
 }
 p{
@@ -78,6 +82,7 @@ img{
     flex: 1;
     margin: 0;
     padding: 0;
+    transition: all 0.2s ease-out 0s;
 }
 .overview-recipes li img{
     width: 100%;
@@ -88,15 +93,35 @@ img{
     margin: 1rem 0;
     padding: 0;
 }
-@media (max-width: 600px) {
-    .overview-recipes{
-        flex-direction: column;
-    }
-}
+
 
 .overview-recipes:hover img{
     filter: blur(2px) grayscale(70%);
 }
 .intro{
     font-size: 2.5rem;
+}
+
+@media (max-width: 600px) {
+    .overview-recipes{
+        flex-direction: column;
+    }
+    h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 1.7rem;
+}
+h3{
+    font-size: 1.4rem;
+}
+.intro{
+    font-size: 2rem;
+}
+}
+footer{
+    margin-top: 7rem;
+    background-color: #1D2C2C;
+    color: #93B8BA;
+    padding: 2rem 2rem 8rem 2rem;
 }
