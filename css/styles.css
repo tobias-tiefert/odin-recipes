@@ -9,23 +9,47 @@ body{
 h1{
     text-transform: uppercase;
     margin: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 6rem;
+    font-weight: 400;
+    color: beige;
+    line-height: 1;
 }
 h2{
     margin: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1;
+
 }
 h3{
     margin: 3rem 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1;
 }
 a{
     margin: 1rem;
-    color: coral;
+    color:coral;
+    font-weight: 700;
 }
+p, li{
+    color: beige;
+}
+
 
 a:visited{
     color:coral;
 }
 a:hover{
     color: darkkhaki;
+}
+.overview-recipes li:hover img{
+    filter:brightness(130%);
+    margin-top: -0.8rem;
+    
 }
 p{
     margin: 1rem;
@@ -37,8 +61,17 @@ img{
 .overview-recipes{
     display: flex;
     flex-direction: row;
-    padding: 0;
+    padding: 1rem;
     margin: 0;
+    gap: 1rem;
+
+}
+.overview-recipes a{
+    margin: 0;
+}
+.overview-recipes ul {
+    margin: 0;
+    padding: 0;
 }
 .overview-recipes li{
     list-style: none;
@@ -49,7 +82,21 @@ img{
 .overview-recipes li img{
     width: 100%;
     height: auto;
+    transition: all 0.2s ease-out 0s;
 }
 .overview-recipes li h3, .overview-recipes li p{
-    margin: 1rem;
+    margin: 1rem 0;
+    padding: 0;
+}
+@media (max-width: 600px) {
+    .overview-recipes{
+        flex-direction: column;
+    }
+}
+
+.overview-recipes:hover img{
+    filter: blur(2px) grayscale(70%);
+}
+.intro{
+    font-size: 2.5rem;
 }
